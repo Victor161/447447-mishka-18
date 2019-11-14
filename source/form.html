@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+      <header class="page-header">
+        <a class="page-header__logo" href="">
+          <img class="page-header__logo-image"  src="" width="" height="" alt="">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle">открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a href="">Вязание на заказ</a>
+              </li>
+            </ul>
+            <form class="main-nav__search search-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="search-form__label" for="search"></label>
+              <input class="search-form__input" type="text" id="search" name="search-input" placeholder="Поиск по сайту">
+            </form>
+            <a class="main-nav__basket" href="">
+              Корзина: <span>пока пуста</span>
+            </a>
+          </div>
+        </nav>  
+      </header>
+
+      <main class="page-main">
+        <section class="form-of-order">
+          <div class="form-of-order__wrapper-title">
+            <h2 class="form-of-order__title title-page">Вязание на заказ</h2>
+            <p class="form-of-order__text">
+              Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+              и мы свяжемся с вами, чтобы уточнить детали.
+            </p>
+          </div>
+          <form class="form-of-order__filters filters" action="" method="post">
+            <h2 class="visually-hidden">Выбор параметров игрушек для вязания под заказ</h2>
+            <fieldset class="filters__types">
+              <legend class="filters__title-types">Тип</legend>
+              <ul class="filters__list-of-types">
+                <li class="filters__item-of-type">
+                  <label class="filters__select-type" for="radio-type-1">Аксессуар для интерьера</label>
+                  <input class="visually-hidden" type="radio" id="radio-type-1" name="radio-type" checked>
+                </li>
+                <li class="filters__item-of-type">
+                  <label class="filters__select-type" for="radio-type-2">Детская игрушка</label>
+                  <input class="visually-hidden" type="radio" id="radio-type-2" name="radio-type">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters__colors">
+              <legend class="filters__title-colors">Цвет</legend>
+              <ul class="filters__list-of-colors">
+                <li class="filters__item-of-color">
+                  <label class="filters__select-color select-color--checked" for="check-white">Белый</label>
+                  <input class="visually-hidden" type="checkbox" id="check-white" name="check-color" checked>
+                </li>
+                <li class="filters__item-of-color">
+                  <label class="filters__select-color select-color--checked" for="check-gray">Серый</label>
+                  <input class="visually-hidden" type="checkbox" id="check-gray" name="check-color" checked>
+                </li>
+                <li class="filters__item-of-color">
+                  <label class="filters__select-color" for="check-tiffany">"Тиффани"</label>
+                  <input class="visually-hidden" type="checkbox" id="check-tiffany" name="check-color">
+                </li>
+                <li class="filters__item-of-color">
+                  <label class="filters__select-color" for="check-black">Черный</label>
+                  <input class="visually-hidden" type="checkbox" id="check-black" name="check-color">
+                </li>
+                <li class="filters__item-of-color">
+                  <label class="filters__select-color" for="check-pink">Розовый</label>
+                  <input class="visually-hidden" type="checkbox" id="check-pink" name="check-color">
+                </li>
+                <li class="filters__item-of-color">
+                  <label class="filters__select-color" for="check-orange">Оранжевый</label>
+                  <input class="visually-hidden" type="checkbox" id="check-orange" name="check-color">
+                </li>  
+              </ul>
+            </fieldset>
+            <fieldset class="filters__user-name">
+              <legend class="filters__title-names">Фио</legend>
+              <ul class="filters__list-of-names">
+                <li class="filters__item-of-name">
+                  <label class="filters__name-enter" for="check-name">Имя:</label>
+                  <input class="filters__enter-name" type="text" id="check-name" name="name-user">
+                </li>
+                <li class="filters__item-of-name">
+                  <label class="filters__surname-enter" for="check-surname">Фамилия:</label>
+                  <input class="filters__enter-surnname" type="text" id="check-surname" name="surname-user">
+                </li>
+                <li class="filters__item-of-name">
+                  <label class="filters__patronymic-enter" for="check-partonymic">Отчество:</label>
+                  <input class="filters__enter-patronymic" type="text" id="check-patronymic" name="patronymic-user">
+                </li>
+              </ul>
+            </fieldset>
+            <ul class="filters__telephone">
+              <li class="filters__item-telephone">
+                <label class="filters__telephone-enter" for="check-telephone">Тел</label>
+                <input class="filters__enter-telephone" type="tel" id="check-telephone" name="telephone-user">
+              </li>
+            </ul>
+            <ul class="filters__email">
+              <li class="filters__item-email">
+                <label class="filters__email-enter" for="check-email">E-mail</label>
+                <input class="filters__enter-email" type="email" id="check-email" name="email-user">
+              </li>
+            </ul>
+            <ul class="filters__additionally">
+              <li class="filters__item-additionally">
+                <label class="filters__additionally-enter" for="check-additionally">Доп</label>
+                <textarea class="filters__enter-additionally" id="check-additionally" 
+                  name="additionally-user" placeholder="Опишите все ваши пожелания к заказу">
+                </textarea>
+              </li>
+            </ul>
+            <small class="filters__text-required">Поля обязательны для заполнения</small>
+            <a class="filters__link-order" href="">Отправить заказ</a>
+          </form>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+          <div class="page-footer__social social">
+            <ul class="social__social-list">
+              <li class="social__social-item">
+                <a class="social__link social__link--instagram" href="">ИНСТАГРАМ</a>
+              </li>
+              <li class="social__social-item">
+                <a class="social__link social__link--facebook" href="">ФЕЙСБУК</a>
+              </li>
+              <li class="social__social-item">
+                <a class="social__link social__link--twitter" href="">ТВИТТЕР</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML-ACADEMY</a>
+          </div>
+        </footer>
+  </body>
+</html>
