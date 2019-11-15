@@ -60,11 +60,11 @@
               <legend class="filters__title-colors">Цвет</legend>
               <ul class="filters__list-of-colors">
                 <li class="filters__item-of-color">
-                  <label class="filters__select-color select-color--checked" for="check-white">Белый</label>
+                  <label class="filters__select-color" for="check-white">Белый</label>
                   <input class="visually-hidden" type="checkbox" id="check-white" name="check-color" checked>
                 </li>
                 <li class="filters__item-of-color">
-                  <label class="filters__select-color select-color--checked" for="check-gray">Серый</label>
+                  <label class="filters__select-color" for="check-gray">Серый</label>
                   <input class="visually-hidden" type="checkbox" id="check-gray" name="check-color" checked>
                 </li>
                 <li class="filters__item-of-color">
@@ -90,11 +90,11 @@
               <ul class="filters__list-of-names">
                 <li class="filters__item-of-name">
                   <label class="filters__name-enter" for="check-name">Имя:</label>
-                  <input class="filters__enter-name" type="text" id="check-name" name="name-user">
+                  <input class="filters__enter-name" type="text" id="check-name" name="name-user" required>
                 </li>
                 <li class="filters__item-of-name">
                   <label class="filters__surname-enter" for="check-surname">Фамилия:</label>
-                  <input class="filters__enter-surnname" type="text" id="check-surname" name="surname-user">
+                  <input class="filters__enter-surnname" type="text" id="check-surname" name="surname-user" required>
                 </li>
                 <li class="filters__item-of-name">
                   <label class="filters__patronymic-enter" for="check-partonymic">Отчество:</label>
@@ -102,26 +102,24 @@
                 </li>
               </ul>
             </fieldset>
-            <ul class="filters__telephone">
-              <li class="filters__item-telephone">
-                <label class="filters__telephone-enter" for="check-telephone">Тел</label>
+            <fieldset class="filters__telephone">
+              <legend class="filters__title-names">Тел</legend>
+                <label class="filters__telephone-enter" for="check-telephone"></label>
                 <input class="filters__enter-telephone" type="tel" id="check-telephone" name="telephone-user">
-              </li>
-            </ul>
-            <ul class="filters__email">
-              <li class="filters__item-email">
-                <label class="filters__email-enter" for="check-email">E-mail</label>
-                <input class="filters__enter-email" type="email" id="check-email" name="email-user">
-              </li>
-            </ul>
-            <ul class="filters__additionally">
-              <li class="filters__item-additionally">
-                <label class="filters__additionally-enter" for="check-additionally">Доп</label>
+            </fieldset>
+            <fieldset class="filters__email">
+              <legend class="filters__title-names">E-mail</legend>
+                <label class="filters__email-enter" for="check-email"></label>
+                <input class="filters__enter-email" type="email" id="check-email" name="email-user" required>
+            </fieldset>
+
+            <fieldset class="filters__additionally">
+              <legend class="filters__title-names">Доп</legend>
+                <label class="filters__additionally-enter" for="check-additionally"></label>
                 <textarea class="filters__enter-additionally" id="check-additionally" 
                   name="additionally-user" placeholder="Опишите все ваши пожелания к заказу">
                 </textarea>
-              </li>
-            </ul>
+            </fieldset>
             <small class="filters__text-required">Поля обязательны для заполнения</small>
             <a class="filters__link-order" href="">Отправить заказ</a>
           </form>
