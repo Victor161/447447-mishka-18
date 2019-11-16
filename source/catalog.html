@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+      <header class="page-header">
+        <a class="page-header__logo" href="">
+          <img class="page-header__logo-image"  src="" width="" height="" alt="">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle">открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a href="">Вязание на заказ</a>
+              </li>
+            </ul>
+            <form class="main-nav__search search-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="search-form__label" for="search"></label>
+              <input class="search-form__input" type="text" id="search" name="search-input" placeholder="Поиск по сайту">
+            </form>
+            <a class="main-nav__basket" href="">
+              Корзина: <span>пока пуста</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <h2 class="title-page">Каталог товаров</h2>>
+        <ul class="catalog-list">
+          <li class="catalog-list__item catalog-item">
+            <p class="catalog-item__wraper-image">
+              <a class="catalog-item__link" href="">
+                <img class="catalog-item__image" src="" width="" height="" 
+                  alt="Вязаная игрушка - Зайчик-попрыгайчик">
+              </a>
+            </p>
+            <div class="catalog-item__description">
+              <p class="catalog-item__title">
+                Зайчик-попрыгайчик
+              </p>
+              <p class="catalog-item__parameters">
+                Рост 30 см, вес 200 г
+              </p>
+              <p class="catalog-item__price">
+                1200 руб.
+              </p>
+            </div>
+          </li>
+          <li class="catalog-list__item catalog-item">
+            <p class="catalog-item__wraper-image">
+              <a class="catalog-item__link" href="">
+                <img class="catalog-item__image" src="" width="" height="" 
+                  alt="Вязаная игрушка - Корзинка для белья">
+              </a>
+            </p>
+            <div class="catalog-item__description">
+              <p class="catalog-item__title">
+                Корзинка для белья
+              </p>
+              <p class="catalog-item__parameters">
+                Диаметр 15 см, высота 10 см
+              </p>
+              <p class="catalog-item__price">
+                690 руб.
+              </p>
+            </div>
+          </li>
+          <li class="catalog-list__item catalog-item">
+            <p class="catalog-item__wraper-image">
+              <a class="catalog-item__link" href="">
+                <img class="catalog-item__image" src="" width="" height="" 
+                  alt="Вязаная игрушка - Большая корзинка для игрушек">
+              </a>
+            </p>
+            <div class="catalog-item__description">
+              <p class="catalog-item__title">
+                Большая корзинка для игрушек
+              </p>
+              <p class="catalog-item__parameters">
+                Диаметр 30 см, высота 30 см
+              </p>
+              <p class="catalog-item__price">
+                1500 руб.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="toys-manufacture">
+          <h2 class="toys-manufacture__title">Процесс производства</h2>
+          <video></video>
+          <p class="toys-manufacture__text">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, 
+            как появляются наши товары.
+          </p>
+          <a class="" href="">Сделать заказ</a>
+        </div>
+
+      </main>
+
+      <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__social-list">
+          <li class="social__social-item">
+            <a class="social__link social__link--instagram" href="">ИНСТАГРАМ</a>
+          </li>
+          <li class="social__social-item">
+            <a class="social__link social__link--facebook" href="">ФЕЙСБУК</a>
+          </li>
+          <li class="social__social-item">
+            <a class="social__link social__link--twitter" href="">ТВИТТЕР</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML-ACADEMY</a>
+      </div>
+    </footer>
+
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <b>Выберите размер</b>
+      <ul class="modal__list">
+        <li class="modal__item">S</li>
+        <li class="modal__item">M</li>
+        <li class="modal__item">L</li>
+      </ul>
+      <a class="modal__btn-add" href="">Добавить</a>
+    </section>
+
+  </body>
+</html>
