@@ -3,42 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
-      <header class="page-header">
+    <header class="page-header">
+      <div class="page-header__container mobile-container">
         <a class="page-header__logo" href="">
-          <img class="page-header__logo-image"  src="" width="" height="" alt="">
+          <img class="page-header__logo-image"  src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина - Мишка">
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle">открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a href="">Вязание на заказ</a>
-              </li>
-            </ul>
-            <form class="main-nav__search search-form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="search-form__label" for="search"></label>
-              <input class="search-form__input" type="text" id="search" name="search-input" placeholder="Поиск по сайту">
-            </form>
-            <a class="main-nav__basket" href="">
-              Корзина: <span>пока пуста</span>
-            </a>
-          </div>
+          <button class="main-nav__toggle"></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__item-link" href="">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link" href="">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link site-list__item-link--search" href="">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link site-list__item-link--basket" href="">
+                Корзина: <span>пока пуста</span>
+              </a>
+            </li>
+          </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main class="page-main">
-        <h2 class="title-page">Каталог товаров</h2>>
+    <main class="page-main">
+        <h2 class="title-page">Каталог товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-list__item catalog-item">
             <p class="catalog-item__wraper-image">
               <a class="catalog-item__link" href="">
-                <img class="catalog-item__image" src="" width="" height="" 
+                <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" 
                   alt="Вязаная игрушка - Зайчик-попрыгайчик">
               </a>
             </p>
@@ -57,7 +61,7 @@
           <li class="catalog-list__item catalog-item">
             <p class="catalog-item__wraper-image">
               <a class="catalog-item__link" href="">
-                <img class="catalog-item__image" src="" width="" height="" 
+                <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" 
                   alt="Вязаная игрушка - Корзинка для белья">
               </a>
             </p>
@@ -76,7 +80,7 @@
           <li class="catalog-list__item catalog-item">
             <p class="catalog-item__wraper-image">
               <a class="catalog-item__link" href="">
-                <img class="catalog-item__image" src="" width="" height="" 
+                <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" 
                   alt="Вязаная игрушка - Большая корзинка для игрушек">
               </a>
             </p>
@@ -103,9 +107,9 @@
           <a class="" href="">Сделать заказ</a>
         </div>
 
-      </main>
+    </main>
 
-      <footer class="page-footer">
+    <footer class="page-footer">
       <div class="page-footer__social social">
         <ul class="social__social-list">
           <li class="social__social-item">
@@ -121,19 +125,21 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML-ACADEMY</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML</a>
       </div>
     </footer>
 
     <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <b>Выберите размер</b>
-      <ul class="modal__list">
-        <li class="modal__item">S</li>
-        <li class="modal__item">M</li>
-        <li class="modal__item">L</li>
-      </ul>
-      <a class="modal__btn-add" href="">Добавить</a>
+      <div class="mobile-container">
+        <h2 class="modal__title">Добавить<br> в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__item modal__item--border-turquoise">S</li>
+          <li class="modal__item">M</li>
+          <li class="modal__item">L</li>
+        </ul>
+        <a class="modal__btn-add" href="">Добавить</a>
+      </div>
     </section>
 
   </body>
