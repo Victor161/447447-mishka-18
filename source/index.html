@@ -3,121 +3,118 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="">
-        <img class="page-header__logo-image"  src="" width="" height="" alt="">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle">открыть меню</button>
-        <div class="main-nav__wrapper">
+      <div class="page-header__container mobile-container">
+        <a class="page-header__logo" href="">
+          <img class="page-header__logo-image"  src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина - Мишка">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle"></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="">Каталог товаров</a>
+              <a class="site-list__item-link" href="">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="">Вязание на заказ</a>
+              <a class="site-list__item-link" href="">Вязание на заказ</a>
             </li>
             <li class="site-list__item">
-              <a class="main-nav__search" href="">
+              <a class="site-list__item-link site-list__item-link--search" href="">
                 Поиск по сайту
               </a>
             </li>
             <li class="site-list__item">
-              <a class="main-nav__basket" href="">
+              <a class="site-list__item-link site-list__item-link--basket" href="">
                 Корзина: <span>пока пуста</span>
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
-    
     <main class="page-main">
       <section class="section-toys">
         <h1 class="section-toys__heading">
-          Милые штуки ручной работы для дома
+          Милые штуки ручной<br> работы для дома
         </h1>
         <ul class="section-toys__list">
           <li class="section-toys__item">
-            <a class="section-toys__content" href="">
-              Предметы интерьера
+            <a class="section-toys__item-link" href="">
+              Предметы<br> интерьера
             </a>
           </li>
-          <li class="section-toys__item">
-            <a class="section-toys__content" href="">
-              Детские игрушки
+          <li class="section-toys__item section-toys__item--bg-color">
+            <a class="section-toys__item-link" href="">
+              Детские<br> игрушки
             </a>
           </li>
         </ul>
       </section>
       <section class="item-of-week">
-        <h2 class="item-of-week__heading">
-          Вязаные корзинки
-        </h2>
+        <div class="mobile-container">
+          <h2 class="item-of-week__heading">
+            Вязаные корзинки
+          </h2>
           <b class="item-of-week__label">
             Товар недели
           </b>
-        <p class="item-of-week__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
-          и трех размерах. 
-        </p>
-        <table class="item-of-week__parameters">
-          <tr>
-            <td class="item-of-week__color">Цвет:</td>
-            <td class="item-of-week__color-value">"Тиффани"/серый</td>
-          </tr>
-          <tr>
-            <td class="item-of-week__diameter">Диаметр:</td>
-            <td class="item-of-week__diameter-value">25 см</td>
-          </tr>
-          <tr>
-            <td class="item-of-week__height">Высота:</td>
-            <td class="item-of-week__height-value">15 см</td>
-          </tr>
-        </table>
-        <div class="item-of-week__image-item">ИЗОБРАЖЕНИЕ ТОВАРА НЕДЕЛИ</div>
-          <b class="item-of-week__price-item">
-            Цена: 990 руб.
-          </b>
-        </p>
-        <a class="item-of-week__btn-order" href="">Заказать</a>
+          <p class="item-of-week__description">
+            Экологически чистая пряжа,<br> ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="item-of-week__table-parameters table-parameters">
+            <tr class="table-parameters__row">
+              <td class="table-parameters__column">Цвет:</td>
+              <td class="table-parameters__column">"Тиффани"/серый</td>
+            </tr>
+            <tr class="table-parameters__row">
+              <td class="table-parameters__column">Диаметр:</td>
+              <td class="table-parameters__column">25 см</td>
+            </tr>
+            <tr class="table-parameters__row">
+              <td class="table-parameters__column">Высота:</td>
+              <td class="table-parameters__column">15 см</td>
+            </tr>
+          </table>
+          <div class="item-of-week__image-item"></div>
+            <b class="item-of-week__price-item">
+              Цена: 990 руб.
+            </b>
+          <a class="item-of-week__btn-order" href="">Заказать</a>
+        </div>
       </section>
       <section class="about-us">
-        <h2 class="about-us__title">Коротко о нас</h2>
+        <div class="mobile-container">
+        <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item">
-            Экологически чистые материалы
+            Экологически<br> чистые материалы
           </li>
           <li class="about-us__item">
-            Скандинавский стиль по российской цене
+            Скандинавский стиль<br> по российской цене
           </li>
           <li class="about-us__item">
-            Увеличивает лайки на фотографиях
+            Увеличивает лайки<br> на фотографиях
           </li>
           <li class="about-us__item">
-            Связано вручную с любовью и умилением
+            Связано вручную с<br> любовью и умилением
           </li>
           <li class="about-us__item">
             Поддержка отечественного производителя
           </li>
           <li class="about-us__item">
-            Поставляется в подарочной упаковке
+            Поставляется в<br> подарочной упаковке
           </li>
         </ul>
+        </div>
       </section>
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__list">
           <blockquote class="reviews-item">
             <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества 
-              лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров
-              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также
-              набирют больше лайков!
-            </p>
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирют больше лайков!</p>
             <cite class="reviews__author-name">
               Анастасия Красильникова
             </cite>
@@ -129,7 +126,7 @@
         <a class="reviews__btn-to-write" href="">Написать</a>
       </section>
       <section class="contacts">
-        <h2 class="contacts_title">Контакты</h2>
+        <h2 class="contacts__title">Контакты</h2>
         <table class="contacts__info">
           <tr>
             <td class="contacts__e-mail">
@@ -148,8 +145,8 @@
             </td>
           </tr>
         </table>
-        <img src="" width="" height="" alt="Расположение магазина на карте">
-        <a href="form.html">
+        <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Расположение магазина на карте">
+        <a class="contacts__write-us" href="form.html">
           Напишите нам
         </a>
       </section>
@@ -171,19 +168,21 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML-ACADEMY</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">html</a>
       </div>
     </footer>
 
     <section class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <b>Выберите размер</b>
+      <div class="mobile-container">
+        <h2 class="modal__title">Добавить<br> в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
         <ul class="modal__list">
-          <li class="modal__item">S</li>
+          <li class="modal__item modal__item--border-turquoise">S</li>
           <li class="modal__item">M</li>
           <li class="modal__item">L</li>
         </ul>
         <a class="modal__btn-add" href="">Добавить</a>
+      </div>
       </section>
 
   </body>

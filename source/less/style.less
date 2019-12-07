@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    src: local("OpenSans"), local("OpenSans"),
+    url("../fonts/opensans.woff") format("woff"),
+    url("..fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: normal;
+    src: local("OpenSans-Bold"), local("OpenSans Bold"),
+    url("../fonts/opensansbold.woff") format("woff"),
+    url("..fonts/opensansbold.woff2") format("woff2");
+}
+
+@import "variables.less";
+@import "mixins.less";
+
+body {
+    width: @base-mobile-width;
+    padding: 0;
+    margin: @base-margin;
+    font-family: @base-font-family;
+    font-weight: @base-font-weight;
+    font-size: @base-font-size;
+    color: @base-color;
+    line-height: @base-line-height;
+    background-color: @base-bg-color;
+}
+
+
+@import "blocks/page-header.less";
+
+@import "blocks/mobile-container.less";
+
+@import "blocks/main-nav.less";
+
+@import "blocks/site-list.less";
+
+@import "blocks/section-toys.less";
+
+@import "blocks/item-of-week.less";
+
+@import "blocks/table-parameters";
+
+@import "blocks/about-us";
+
+@import "blocks/page-footer";
+
+@import "blocks/modal";
+
+@import "blocks/title-page";
+
+@import "blocks/catalog-list";
+
+@import "blocks/catalog-item";
