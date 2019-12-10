@@ -1,0 +1,94 @@
+.filters {
+    width: 260px;
+    padding-bottom: 20px;
+}
+
+.filters__types,
+.filters__colors,
+.filters__user-name,
+.filters__telephone,
+.filters__email,
+.filters__additionally {
+    .mix-filters-types;
+    width: 260px;
+}
+
+.filters__title-types,
+.filters__title-colors,
+.filters__title-names {
+    .mix-filters-titles;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 198px;
+        height: 1px;
+        background-color: #62d1ba;
+        left: 60px;
+        top: 8px;
+    }
+}
+
+.filters__list-of-types,
+.filters__list-of-colors,
+.filters__list-of-names {
+    .mix-list;
+    margin-left: 60px;
+}
+
+.filters__list-of-names {
+    margin-left: 0;
+}
+
+.filters__item-of-type,
+.filters__item-of-color,
+.filters__item-of-name {
+    padding-top: 20px;
+}
+
+.filters__select-type,
+.filters__select-color,
+.filters__enter-name {
+    .mix-filters-labels;
+}
+
+.filters__input-name,
+.filters__input-surname,
+.filters__input-patronymic,
+.filters__input-telephone,
+.filters__input-email {
+    width: 256px;
+    border: none;
+    border-bottom: 2px solid @base-color;
+    padding: 15px 0;
+
+    &::placeholder {
+        .mix-input-placeholder;
+    }
+}
+
+.filters__enter-additionally {
+    width: 256px;
+    height: 140px;
+    border: 2px solid @base-color;
+
+    &::placeholder {
+        .mix-input-placeholder;
+        padding: 15px;
+    }
+}
+
+.filters__text-required {
+    display: block;
+    margin-top: 13px;
+    margin-bottom: 33px;
+    font-size: @base-font-size - 3px;
+    font-weight: @base-font-weight;
+    line-height: @base-line-height - 8px;
+    color: @color-gray;
+}
+
+.filters__link-order {
+    .mix-btn-action;
+}
