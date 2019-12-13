@@ -35,14 +35,12 @@
         </div>
       </header>
       <main class="page-main">
+        <h2 class="title-page">Вязание на заказ</h2>
         <section class="form-of-order">
-          <div class="form-of-order__wrapper-title">
-            <h2 class="form-of-order__title title-page">Вязание на заказ</h2>
-            <p class="form-of-order__text">
-              Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
-              и мы свяжемся с вами, чтобы уточнить детали.
-            </p>
-          </div>
+          <p class="form-of-order__text">
+            Мы будем рады воплотить в жизнь<br> ваши пожелания! Заполните простую форму заказа
+            и мы свяжемся с вами, чтобы уточнить детали.
+          </p>
           <form class="form-of-order__filters filters" action="" method="post">
             <h2 class="visually-hidden">Выбор параметров игрушек для вязания под заказ</h2>
             <fieldset class="filters__types">
@@ -84,44 +82,42 @@
                 <li class="filters__item-of-color">
                   <label class="filters__select-color" for="check-orange">Оранжевый</label>
                   <input class="visually-hidden" type="checkbox" id="check-orange" name="check-color">
-                </li>  
+                </li>
               </ul>
             </fieldset>
             <fieldset class="filters__user-name">
               <legend class="filters__title-names">Фио</legend>
               <ul class="filters__list-of-names">
                 <li class="filters__item-of-name">
-                  <label class="filters__name-enter" for="check-name">Имя:</label>
-                  <input class="filters__enter-name" type="text" id="check-name" name="name-user" required>
+                  <label class="filters__enter-name" for="check-name">Имя:<br></label>
+                  <input class="filters__input-name" type="text" id="check-name" name="name-user" placeholder="Введите ваше имя*" required>
                 </li>
                 <li class="filters__item-of-name">
-                  <label class="filters__surname-enter" for="check-surname">Фамилия:</label>
-                  <input class="filters__enter-surnname" type="text" id="check-surname" name="surname-user" required>
+                  <label class="filters__enter-name" for="check-surname">Фамилия:<br></label>
+                  <input class="filters__input-surname" type="text" id="check-surname" name="surname-user" placeholder="Укажите фамилию*" required>
                 </li>
                 <li class="filters__item-of-name">
-                  <label class="filters__patronymic-enter" for="check-partonymic">Отчество:</label>
-                  <input class="filters__enter-patronymic" type="text" id="check-patronymic" name="patronymic-user">
+                  <label class="filters__enter-name" for="check-partonymic">Отчество:<br></label>
+                  <input class="filters__input-patronymic" type="text" id="check-patronymic" name="patronymic-user" placeholder="Отчество, если желаете">
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filters__telephone">
               <legend class="filters__title-names">Тел</legend>
                 <label class="filters__telephone-enter" for="check-telephone"></label>
-                <input class="filters__enter-telephone" type="tel" id="check-telephone" name="telephone-user">
+                <input class="filters__input-telephone" type="tel" id="check-telephone" name="telephone-user" placeholder="+7 XXX XXX XX XX*" required>
             </fieldset>
             <fieldset class="filters__email">
               <legend class="filters__title-names">E-mail</legend>
                 <label class="filters__email-enter" for="check-email"></label>
-                <input class="filters__enter-email" type="email" id="check-email" name="email-user" required>
+                <input class="filters__input-email" type="email" id="check-email" name="email-user" placeholder="Ваш Email*" required>
             </fieldset>
-
             <fieldset class="filters__additionally">
               <legend class="filters__title-names">Доп</legend>
                 <label class="filters__additionally-enter" for="check-additionally"></label>
-                <textarea class="filters__enter-additionally" id="check-additionally" name="additionally-user" placeholder="Опишите все ваши пожелания к заказу">
-                </textarea>
+                <textarea class="filters__enter-additionally" id="check-additionally" name="additionally-user" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </fieldset>
-            <small class="filters__text-required">Поля обязательны для заполнения</small>
+            <small class="filters__text-required">*Поля обязательны для заполнения</small>
             <a class="filters__link-order" href="">Отправить заказ</a>
           </form>
         </section>
@@ -144,6 +140,6 @@
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">html</a>
           </div>
-        </footer>
+      </footer>
   </body>
 </html>

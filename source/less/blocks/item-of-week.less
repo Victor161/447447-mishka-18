@@ -1,57 +1,47 @@
 .item-of-week {
-    width: @base-mobile-width;
-    margin: @base-margin;
-    background-color: @base-bg-color;
+  width: @base-mobile-width;
+  margin: @base-margin;
+  background-color: @base-bg-color;
 }
 
 .item-of-week__heading {
-    margin: @base-margin;
-    margin-top: 30px;
-    margin-bottom: 8px;
-    font-size: @base-font-size + 8px;
-    font-weight: 700;
-    line-height: @base-line-height + 6px;
+  .mix-titles;
+  margin: @base-margin;
+  margin-top: 30px;
+  margin-bottom: 8px;
 }
 
 .item-of-week__label {
-    color: @color-turquoise;
-    line-height: @base-line-height - 4px;
-    text-transform: uppercase;
+  color: @color-turquoise;
+  line-height: @base-line-height - 4px;
+  text-transform: uppercase;
 }
 
 .item-of-week__description {
-    width: 260px;
-    margin: @base-margin;
-    margin-top: 30px;
-    font-size: @base-font-size - 2px;
-    color: @color-gray;
+  width: 260px;
+  margin: @base-margin;
+  margin-top: 30px;
+  font-size: @base-font-size - 2px;
+  color: @color-gray;
 }
 
 .item-of-week__image-item {
-    width: @base-mobile-width - 60px;
-    height: 315px;
-    margin-top: 0;
-    background-image: url("../img/triple-set-mobile@1x.jpg");
-    background-position: 0px 30px;
-    background-repeat: no-repeat;
+  width: @base-mobile-width - 60px;
+  height: 315px;
+  margin-top: 0;
+  background-image: url("../img/triple-set-mobile@1x.jpg");
+  background-position: 0 30px;
+  background-repeat: no-repeat;
 }
 
 .item-of-week__price-item {
-    display: block;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-align: center;
-    color: @color-gray;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: @color-gray;
 }
 
 .item-of-week__btn-order {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: @base-font-weight + 300;
-    color: @color-gray;
-    line-height: @base-line-height - 4px;
-    border: 2px solid @color-gray;
-    padding: 10px; 
+  .mix-btn-action;
 }

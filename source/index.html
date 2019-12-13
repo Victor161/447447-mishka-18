@@ -110,39 +110,37 @@
         </div>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__list">
-          <blockquote class="reviews-item">
-            <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирют больше лайков!</p>
-            <cite class="reviews__author-name">
-              Анастасия Красильникова
-            </cite>
-            <p>@misssssiskras</p>
-          </blockquote>
+        <div class="mobile-container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__list">
+            <blockquote class="reviews__item">
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирют больше лайков!</p>
+              <cite class="reviews__author-name">
+                Анастасия Красильникова
+              </cite>
+              <p class="reviews__author-email">@misssssiskras</p>
+            </blockquote>
+          </div>
+          <button class="reviews__toggle reviews__toggle--left" type="button">ВЛЕВО</button>
+          <button class="reviews__toggle reviews__toggle--right" type="button">ВПРАВО</button>
+          <a class="reviews__btn-to-write" href="">Написать</a>
         </div>
-        <button class="reviews__toggle" type="button">СТРЕЛКА ВЛЕВО</button>
-        <button class="reviews__toggle" type="button">СТРЕЛКА ВПРАВО</button>
-        <a class="reviews__btn-to-write" href="">Написать</a>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__info">
-          <tr>
-            <td class="contacts__e-mail">
+        <table class="contacts-info">
+          <tr class="contacts-info__row">
+            <td class="contacts-info__column contacts-info__column--left">
               e-mail:
             </td>
-            <td class="contacts__e-mail-value">
+            <td class="contacts-info__column contacts-info__column--border">
               info@mimimishkashop.ru
             </td>
           </tr>
-          <tr>
-            <td class="contacts__address">
-              адрес: 
-            </td>
-            <td class="contacts__address-value">
-              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-            </td>
+          <tr class="contacts-info__row">
+            <td class="contacts-info__column contacts-info__column--left">адрес:</td>
+            <td class="contacts-info__column contacts-info__column--right">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
           </tr>
         </table>
         <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Расположение магазина на карте">
@@ -183,7 +181,7 @@
         </ul>
         <a class="modal__btn-add" href="">Добавить</a>
       </div>
-      </section>
+    </section>
 
   </body>
 </html>
