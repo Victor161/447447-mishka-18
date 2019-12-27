@@ -2,3 +2,17 @@
   .mix-list;
   background-color: @base-bg-color;
 }
+
+@media (min-width: @base-tablet-width) {
+  .catalog-list {
+    width: @base-tablet-width - 100px;
+    margin: @base-margin;
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: @base-desktop-width) {
+  .catalog-list {
+    width: @base-desktop-width;
+  }
+}

@@ -27,6 +27,20 @@ body {
   background-color: @base-bg-color;
 }
 
+@media (min-width: @base-tablet-width) {
+  body {
+    min-width: @base-tablet-width;
+    background-color: red;
+  }
+}
+
+@media (min-width: @base-desktop-width) {
+  body {
+    min-width: @base-desktop-width;
+    background-color: green;
+  }
+}
+
 @import "blocks/about-us";
 @import "blocks/catalog-item";
 @import "blocks/catalog-list";

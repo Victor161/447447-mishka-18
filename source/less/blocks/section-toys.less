@@ -35,3 +35,56 @@
 .section-toys__item-link {
   .mix-toys-link;
 }
+
+@media (min-width: @base-tablet-width) {
+  .section-toys {
+    min-width: @base-tablet-width;
+    height: 677px;
+  }
+
+  .section-toys__heading {
+    width: 510px;
+    margin-top: 100px;
+    margin-bottom: 360px;
+    font-size: @base-font-size + 26px;
+    line-height: @base-line-height + 26px;
+  }
+
+  .section-toys__list {
+    width: 668px;
+    margin-left: 50px;
+    display: flex;
+  }
+
+  .section-toys__item {
+    width: 100%;
+    height: 62px;
+  }
+
+  .section-toys__item-link {
+    font-size: @base-font-size + 3px;
+    line-height: @base-line-height + 6px;
+  }
+}
+
+@media (min-width: @base-desktop-width) {
+  .section-toys {
+    min-width: @base-desktop-width;
+  }
+
+  .section-toys__heading {
+    width: 615px;
+    font-size: @base-font-size + 36px;
+    line-height: @base-line-height + 33px;
+  }
+
+  .section-toys__list {
+    width: 1050px;
+    margin-left: 50px;
+    display: flex;
+  }
+
+  .section-toys__item {
+    width: 100%;
+  }
+}

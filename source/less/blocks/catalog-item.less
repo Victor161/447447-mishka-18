@@ -43,3 +43,37 @@
   padding-top: 20px;
   border-top: 1px solid #ececec;
 }
+
+@media (min-width: @base-tablet-width) {
+  .catalog-item {
+    width: @base-tablet-width - 100px;
+    margin: @base-margin;
+    margin-top: 56px;
+    display: flex;
+  }
+
+  .catalog-item__description {
+    width: 335px;
+  }
+
+  .catalog-item__title {
+    font-size: @base-font-size + 3px;
+    line-height: @base-line-height;
+  }
+
+  .catalog-item__parameters {
+    font-size: @base-font-size - 2px;
+  }
+
+  .catalog-item__price {
+    margin-top: 65px;
+    padding-top: 22px;
+    font-size: @base-font-size;
+  }
+}
+
+@media (min-width: @base-desktop-width) {
+  .catalog-item {
+    min-width: @base-desktop-width;
+  }
+}

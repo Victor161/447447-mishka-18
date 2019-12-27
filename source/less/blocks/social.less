@@ -1,3 +1,27 @@
 .social {
   background-color: @color-gray-footer;
 }
+
+.social__social-list {
+  .mix-list;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid @color-gray-line;
+  padding: 20px 0;
+}
+
+@media (min-width: @base-tablet-width) {
+  .social {
+    margin-left: 250px;
+  }
+
+  .social__social-list {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @base-desktop-width) {
+  .social {
+    margin-left: 440px;
+  }
+}
