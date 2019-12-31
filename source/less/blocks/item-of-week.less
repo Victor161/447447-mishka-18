@@ -27,12 +27,7 @@
 }
 
 .item-of-week__image-item {
-  width: @base-mobile-width - 60px;
-  height: 315px;
-  margin-top: 0;
-  background-image: url("../img/triple-set-mobile@1x.jpg");
-  background-position: 0 30px;
-  background-repeat: no-repeat;
+  margin-top: 28px;
 }
 
 .item-of-week__price-item {
@@ -50,6 +45,7 @@
 @media (min-width: @base-tablet-width) {
   .item-of-week {
     min-width: @base-tablet-width;
+    position: relative;
   }
 
   .item-of-week__wrapper {
@@ -82,7 +78,9 @@
   }
 
   .item-of-week__image-item {
-    display: none;
+    position: absolute;
+    top: 95px;
+    right: 50px;
   }
 
   .item-of-week__price-item {
@@ -103,6 +101,7 @@
   }
 
   .item-of-week__wrapper {
+    margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -123,6 +122,12 @@
   .item-of-week__description {
     width: 285px;
     margin-left: 175px;
+  }
+
+  .item-of-week__image-item {
+    position: absolute;
+    top: -65px;
+    right: 50px;
   }
 
   .item-of-week__price-item {
