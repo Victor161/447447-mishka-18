@@ -9,8 +9,162 @@
   padding: 20px;
   font-weight: @base-font-weight + 300;
   border-bottom: 1px solid #ececec;
+
+  &--new {
+    display: none;
+  }
+
+  &--sale {
+    display: none;
+  }
+
+  &--free-shipping {
+    display: none;
+  }
 }
 
 .site-list__item-link {
   .mix-item-link;
+}
+
+@media (min-width: @base-tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .site-list__item {
+    width: 160px;
+    height: 24px;
+    padding: 32px 0;
+
+    &--catalog {
+      width: 167px;
+      position: absolute;
+      top: 80px;
+      left: -320px;
+      border-bottom: none;
+    }
+
+    &--knitting {
+      position: absolute;
+      top: 80px;
+      left: -150px;
+      border-bottom: none;
+    }
+
+    &--search {
+      order: -1;
+      width: 84px;
+      padding-right: 0;
+      padding-left: 0;
+      border-right: 1px solid #ececec;
+      border-left: 1px solid #ececec;
+    }
+
+    &--basket {
+      width: 260px;
+      order: -1;
+      text-align: right;
+    }
+
+    &--free-shipping {
+      width: 240px;
+      position: absolute;
+      top: 80px;
+      left: 105px;
+      text-align: right;
+      border-bottom: none;
+      display: block;
+    }
+  }
+
+  .site-list__item-link {
+    font-size: @base-font-size - 2px;
+    line-height: @base-line-height;
+    padding-left: 0;
+
+    &--search {
+      .mix-visually-hidden;
+    }
+
+    &--basket {
+      font-size: @base-font-size;
+    }
+
+    &--free-shipping {
+      font-weight: @base-font-weight;
+      color: @color-gray;
+    }
+  }
+}
+
+@media (min-width: @base-desktop-width) {
+  .site-list {
+    width: 351px;
+  }
+
+  .site-list__item {
+    width: 160px;
+    height: 24px;
+    padding: 32px 0;
+
+    &--catalog {
+      width: 186px;
+      top: 0;
+      left: -703px;
+      border-right: 1px solid #ececec;
+      border-bottom: 1px solid #ececec;
+    }
+
+    &--knitting {
+      width: 225px;
+      top: 0;
+      left: -520px;
+      border-bottom: 1px solid #ececec;
+      padding-left: 37px;
+    }
+
+    &--search {
+      width: 84px;
+    }
+
+    &--basket {
+      width: 265px;
+    }
+
+    &--new {
+      display: block;
+      position: absolute;
+      top: 80px;
+      left: -703px;
+      font-size: @base-font-size - 2px;
+      border-bottom: none;
+    }
+
+    &--sale {
+      display: block;
+      font-size: @base-font-size - 2px;
+      position: absolute;
+      top: 80px;
+      left: -463px;
+      border-bottom: none;
+    }
+
+    &--free-shipping {
+      width: 245px;
+      text-align: right;
+      font-size: @base-font-size - 2px;
+    }
+  }
+
+  .site-list__item-link {
+    line-height: @base-line-height;
+
+    &--knitting {
+      display: block;
+      padding-left: 20px;
+    }
+  }
 }

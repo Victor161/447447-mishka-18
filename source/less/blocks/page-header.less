@@ -3,12 +3,49 @@
 }
 
 .page-header__logo {
+  display: block;
   margin-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ececec;
-  display: block;
 }
 
 .page-header__logo-image {
   padding-left: 100px;
+}
+
+@media (min-width: @base-tablet-width) {
+  .page-header {
+    min-width: @base-tablet-width;
+  }
+
+  .page-header__wrapper {
+    width: 668px;
+    margin: @base-margin;
+    display: flex;
+  }
+
+  .page-header__logo {
+    width: 320px;
+    height: 88px;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @base-desktop-width) {
+  .page-header {
+    min-width: @base-desktop-width;
+  }
+
+  .page-header__wrapper {
+    width: 1050px;
+    margin: @base-margin;
+    display: flex;
+  }
+
+  .page-header__logo {
+    width: 320px;
+    height: 88px;
+    margin-left: auto;
+  }
 }

@@ -2,33 +2,49 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
-      <div class="page-header__container mobile-container">
+      <div class="page-header__wrapper">
         <a class="page-header__logo" href="">
           <img class="page-header__logo-image"  src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина - Мишка">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle"></button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--catalog">
               <a class="site-list__item-link" href="">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="">Вязание на заказ</a>
+            <li class="site-list__item site-list__item--knitting">
+              <a class="site-list__item-link site-list__item-link--knitting" href="">Вязание на заказ</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--search">
               <a class="site-list__item-link site-list__item-link--search" href="">
                 Поиск по сайту
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--basket">
               <a class="site-list__item-link site-list__item-link--basket" href="">
                 Корзина: <span>пока пуста</span>
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--new">
+              <a class="site-list__item-link site-list__item-link--new" href="">
+                Новые поступления
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--sale">
+              <a class="site-list__item-link site-list__item-link--sale" href="">
+                Распродажа
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--free-shipping">
+              <a class="site-list__item-link site-list__item-link--free-shipping" href="">
+                Бесплатная доставка по России
               </a>
             </li>
           </ul>
@@ -55,14 +71,16 @@
       </section>
       <section class="item-of-week">
         <div class="mobile-container">
-          <h2 class="item-of-week__heading">
-            Вязаные корзинки
-          </h2>
-          <b class="item-of-week__label">
-            Товар недели
-          </b>
-          <p class="item-of-week__description">
-            Экологически чистая пряжа,<br> ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <div class="item-of-week__wrapper">
+            <h2 class="item-of-week__heading">
+              Вязаные корзинки
+            </h2>
+            <b class="item-of-week__label">
+              Товар недели
+            </b>
+            <p class="item-of-week__description">
+              Экологически чистая пряжа,<br> ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          </div>
           <table class="item-of-week__table-parameters table-parameters">
             <tr class="table-parameters__row">
               <td class="table-parameters__column">Цвет:</td>
@@ -77,7 +95,9 @@
               <td class="table-parameters__column">15 см</td>
             </tr>
           </table>
-          <div class="item-of-week__image-item"></div>
+          <div class="item-of-week__image-item">
+            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          </div>
             <b class="item-of-week__price-item">
               Цена: 990 руб.
             </b>
@@ -182,6 +202,5 @@
         <a class="modal__btn-add" href="">Добавить</a>
       </div>
     </section>
-
   </body>
 </html>

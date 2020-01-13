@@ -3,22 +3,18 @@
   background-color: @color-gray-footer;
 }
 
-.social__social-list {
-  .mix-list;
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid @color-gray-line;
-  padding: 20px 0;
+@media (min-width: @base-tablet-width) {
+  .page-footer {
+    min-width: @base-tablet-width;
+    height: 144px;
+    display: flex;
+    align-items: center;
+  }
 }
 
-.copyright {
-  margin-top: 20px;
-  margin-left: 70px;
-  padding-bottom: 20px;
-}
-
-.copyright__text {
-  font-size: @base-font-size + 2px;
-  font-weight: @base-font-weight + 300;
-  line-height: @base-line-height - 6px;
+@media (min-width: @base-desktop-width) {
+  .page-footer {
+    min-width: @base-desktop-width;
+    display: flex;
+  }
 }

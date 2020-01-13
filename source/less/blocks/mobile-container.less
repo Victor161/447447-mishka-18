@@ -2,3 +2,15 @@
   width: 260px;
   margin: @base-margin;
 }
+
+@media (min-width: @base-tablet-width) {
+  .mobile-container {
+    min-width: @base-tablet-width - 100px;
+  }
+}
+
+@media (min-width: @base-desktop-width) {
+  .mobile-container {
+    min-width: @base-desktop-width - 100px;
+  }
+}

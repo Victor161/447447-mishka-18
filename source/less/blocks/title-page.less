@@ -1,5 +1,5 @@
 .title-page {
-  width: 100%;
+  width: @base-mobile-width;
   margin: @base-margin;
   padding: 73px 0;
   font-size: @base-font-size + 10px;
@@ -7,4 +7,20 @@
   line-height: @base-line-height + 6px;
   text-align: center;
   background-color: @color-gray-footer;
+}
+
+@media (min-width: @base-tablet-width) {
+  .title-page {
+    width: @base-tablet-width;
+    font-size: @base-font-size + 26px;
+    line-height: @base-line-height + 26px;
+    padding-top: 100px;
+    padding-bottom: 85px;
+  }
+}
+
+@media (min-width: @base-desktop-width) {
+  .title-page {
+    min-width: @base-desktop-width;
+  }
 }
