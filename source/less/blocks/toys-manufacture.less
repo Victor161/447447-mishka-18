@@ -2,6 +2,7 @@
   width: 258px;
   margin: @base-margin;
   margin-top: 30px;
+  margin-bottom: 38px;
   background-color: @base-bg-color;
   border: 1px solid #ececec;
 }
@@ -46,13 +47,72 @@
 
 @media (min-width: @base-tablet-width) {
   .toys-manufacture {
-    margin-top: 52px;
+    width: @base-tablet-width - 100px;
+    margin-top: 252px;
+    margin-bottom: 65px;
+    position: relative;
+  }
+
+  .toys-manufacture__title {
+    padding-left: 105px;
+    font-size: @base-font-size + 3px;
+  }
+
+  .toys-manufacture__image {
+    position: absolute;
+    top: -170px;
+    left: 0;
+  }
+
+  .toys-manufacture__text {
+    width: 560px;
+    padding-left: 40px;
+    padding-right: 45px;
+    font-size: @base-font-size - 2px;
+    line-height: @base-line-height + 6px;
+  }
+
+  .toys-manufacture__text br {
+    display: none;
+  }
+
+  .toys-manufacture__link-order {
+    width: 560px;
   }
 }
 
 @media (min-width: @base-desktop-width) {
   .toys-manufacture {
-    min-width: @base-desktop-width;
-    margin-top: 57px;
+    width: 290px;
+    margin-top: 55px;
+    margin-bottom: 105px;
+    margin-right: 50px;
+    padding-left: 78px;
+  }
+
+  .toys-manufacture__title {
+    width: 200px;
+    margin-top: 95px;
+    padding-left: 0;
+    margin-bottom: 37px;
+  }
+
+  .toys-manufacture__image {
+    position: absolute;
+    top: 0;
+    left: -260px;
+    margin: 0;
+  }
+
+  .toys-manufacture__text {
+    width: 250px;
+    padding-left: 0;
+  }
+
+  .toys-manufacture__link-order {
+    width: 208px;
+    margin-top: 56px;
+    margin-left: 0;
+    margin-bottom: 56px;
   }
 }

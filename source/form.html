@@ -59,8 +59,8 @@
           </p>
           <form class="form-of-order__filters filters" action="" method="post">
             <h2 class="visually-hidden">Выбор параметров игрушек для вязания под заказ</h2>
-            <fieldset class="filters__types">
-              <legend class="filters__title-types">Тип</legend>
+            <div class="filters__types">
+              <p class="filters__title-types">Тип</p>
               <ul class="filters__list-of-types">
                 <li class="filters__item-of-type">
                   <label class="filters__select-type" for="radio-type-1">Аксессуар для интерьера</label>
@@ -71,9 +71,9 @@
                   <input class="visually-hidden" type="radio" id="radio-type-2" name="radio-type">
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="filters__colors">
-              <legend class="filters__title-colors">Цвет</legend>
+            </div>
+            <div class="filters__colors">
+              <p class="filters__title-colors">Цвет</p>
               <ul class="filters__list-of-colors">
                 <li class="filters__item-of-color">
                   <label class="filters__select-color" for="check-white">Белый</label>
@@ -100,9 +100,9 @@
                   <input class="visually-hidden" type="checkbox" id="check-orange" name="check-color">
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="filters__user-name">
-              <legend class="filters__title-names">Фио</legend>
+            </div>
+            <div class="filters__user-name">
+              <p class="filters__title-names">Фио</p>
               <ul class="filters__list-of-names">
                 <li class="filters__item-of-name">
                   <label class="filters__enter-name" for="check-name">Имя:<br></label>
@@ -117,22 +117,22 @@
                   <input class="filters__input-patronymic" type="text" id="check-patronymic" name="patronymic-user" placeholder="Отчество, если желаете">
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="filters__telephone">
-              <legend class="filters__title-names">Тел</legend>
+            </div>
+            <div class="filters__telephone">
+              <p class="filters__title-names">Тел</p>
                 <label class="filters__telephone-enter" for="check-telephone"></label>
                 <input class="filters__input-telephone" type="tel" id="check-telephone" name="telephone-user" placeholder="+7 XXX XXX XX XX*" required>
-            </fieldset>
-            <fieldset class="filters__email">
-              <legend class="filters__title-names">E-mail</legend>
+            </div>
+            <div class="filters__email">
+              <p class="filters__title-names">E-mail</p>
                 <label class="filters__email-enter" for="check-email"></label>
                 <input class="filters__input-email" type="email" id="check-email" name="email-user" placeholder="Ваш Email*" required>
-            </fieldset>
-            <fieldset class="filters__additionally">
-              <legend class="filters__title-names">Доп</legend>
+            </div>
+            <div class="filters__additionally">
+              <p class="filters__title-names">Доп</p>
                 <label class="filters__additionally-enter" for="check-additionally"></label>
                 <textarea class="filters__enter-additionally" id="check-additionally" name="additionally-user" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </fieldset>
+            </div>
             <small class="filters__text-required">*Поля обязательны для заполнения</small>
             <a class="filters__link-order" href="">Отправить заказ</a>
           </form>

@@ -22,7 +22,7 @@
 }
 
 .reviews__author-name {
-  font-size: @base-font-size + 1px;
+  font-size: @base-font-size;
   font-weight: @base-font-weight + 300;
   line-height: @base-line-height + 6px;
   color: @base-color;
@@ -52,4 +52,88 @@
 .reviews__btn-to-write {
   .mix-btn-action;
   margin-top: 38px;
+}
+
+@media (min-width: @base-tablet-width) {
+  .reviews {
+    min-width: @base-tablet-width;
+    position: relative;
+  }
+
+  .reviews__title {
+    font-size: @base-font-size + 25px;
+    font-weight: @base-font-weight + 300;
+    line-height: @base-line-height + 26px;
+  }
+
+  .reviews__text {
+    width: 650px;
+    margin-bottom: 60px;
+    font-size: @base-font-size;
+  }
+
+  .reviews__author-name {
+    font-size: @base-font-size + 1px;
+  }
+
+  .reviews__author-email {
+    margin-top: 10px;
+    font-size: @base-font-size;
+  }
+
+  .reviews__toggle {
+    position: absolute;
+    right: 50px;
+    bottom: 5px;
+    border: none;
+
+    &--left {
+      right: 180px;
+    }
+  }
+
+  .reviews__btn-to-write {
+    width: 175px;
+    height: 26px;
+    position: absolute;
+    top: -30px;
+    right: 50px;
+  }
+}
+
+@media (min-width: @base-desktop-width) {
+  .reviews {
+    width: @base-desktop-width - 275px;
+    margin-left: 225px;
+    margin-right: 0;
+    position: relative;
+  }
+
+  .reviews__title {
+    font-size: @base-font-size + 35px;
+    font-weight: @base-font-weight + 300;
+    line-height: @base-line-height + 33px;
+  }
+
+  .reviews__text {
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+
+  .reviews__toggle {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    border: none;
+
+    &--left {
+      right: 130px;
+    }
+  }
+
+  .reviews__btn-to-write {
+    position: absolute;
+    top: -30px;
+    right: 0;
+  }
 }
