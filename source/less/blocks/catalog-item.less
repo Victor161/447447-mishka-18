@@ -42,6 +42,24 @@
   margin-bottom: 23px;
   padding-top: 20px;
   border-top: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item__icon-basket {
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:hover path {
+    fill: @color-turquoise;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @base-tablet-width) {

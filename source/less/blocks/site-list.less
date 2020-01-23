@@ -25,6 +25,40 @@
 
 .site-list__item-link {
   .mix-item-link;
+  position: relative;
+  display: flex;
+
+  &:hover .site-list__item-text {
+    opacity: 0.6;
+  }
+
+  &:hover .site-list__icon-search,
+  &:hover .site-list__icon-basket {
+    fill: @color-turquoise;
+    opacity: 1;
+  }
+
+  &:active .site-list__item-text {
+    opacity: 0.3;
+  }
+
+  &:active .site-list__icon-search,
+  &:active .site-list__icon-basket {
+    fill: @color-turquoise;
+    opacity: 0.3;
+  }
+}
+
+.site-list__icon-search,
+.site-list__icon-basket {
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  opacity: 0.2;
+}
+
+.site-list__item-text {
+  margin: 0;
 }
 
 @media (min-width: @base-tablet-width) {
@@ -64,7 +98,8 @@
     }
 
     &--basket {
-      width: 260px;
+      width: 177px;
+      padding-left: 83px;
       order: -1;
       text-align: right;
     }
@@ -85,8 +120,8 @@
     line-height: @base-line-height;
     padding-left: 0;
 
-    &--search {
-      .mix-visually-hidden;
+    &--search .site-list__item-text {
+      display: none;
     }
 
     &--basket {
@@ -97,6 +132,14 @@
       font-weight: @base-font-weight;
       color: @color-gray;
     }
+  }
+
+  .site-list__icon-basket {
+    left: -50px;
+  }
+
+  .site-list__icon-search {
+    left: 34px;
   }
 }
 
@@ -118,6 +161,10 @@
       border-bottom: 1px solid #ececec;
     }
 
+    &--catalog .site-list__item-text {
+      font-size: @base-font-size;
+    }
+
     &--knitting {
       width: 225px;
       top: 0;
@@ -126,12 +173,17 @@
       padding-left: 37px;
     }
 
+    &--knitting .site-list__item-text {
+      font-size: @base-font-size;
+    }
+
     &--search {
       width: 84px;
     }
 
     &--basket {
-      width: 265px;
+      width: 186px;
+      padding-left: 70px;
     }
 
     &--new {
@@ -143,6 +195,14 @@
       border-bottom: none;
     }
 
+    &--new:hover {
+      opacity: 0.6;
+    }
+
+    &--new:active {
+      opacity: 0.3;
+    }
+
     &--sale {
       display: block;
       font-size: @base-font-size - 2px;
@@ -150,6 +210,14 @@
       top: 80px;
       left: -463px;
       border-bottom: none;
+    }
+
+    &--sale:hover {
+      opacity: 0.6;
+    }
+
+    &--sale:active {
+      opacity: 0.3;
     }
 
     &--free-shipping {

@@ -40,6 +40,15 @@
 
 .item-of-week__btn-order {
   .mix-btn-action;
+
+  &:hover {
+    background-color: @color-gray;
+    color: @base-bg-color;
+  }
+
+  &:active {
+    color: fade(@base-bg-color, 30%);
+  }
 }
 
 @media (min-width: @base-tablet-width) {
