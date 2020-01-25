@@ -79,6 +79,7 @@
       top: 80px;
       left: -320px;
       border-bottom: none;
+      z-index: 2;
     }
 
     &--knitting {
@@ -86,6 +87,7 @@
       top: 80px;
       left: -150px;
       border-bottom: none;
+      z-index: 2;
     }
 
     &--search {
@@ -112,6 +114,7 @@
       text-align: right;
       border-bottom: none;
       display: block;
+      z-index: 2;
     }
   }
 
@@ -126,11 +129,13 @@
 
     &--basket {
       font-size: @base-font-size;
+      padding-left: 5px;
     }
 
     &--free-shipping {
       font-weight: @base-font-weight;
       color: @color-gray;
+      padding-left: 15px;
     }
   }
 
@@ -183,7 +188,7 @@
 
     &--basket {
       width: 186px;
-      padding-left: 70px;
+      padding-left: 75px;
     }
 
     &--new {
@@ -193,6 +198,7 @@
       left: -703px;
       font-size: @base-font-size - 2px;
       border-bottom: none;
+      z-index: 2;
     }
 
     &--new:hover {
@@ -210,6 +216,7 @@
       top: 80px;
       left: -463px;
       border-bottom: none;
+      z-index: 2;
     }
 
     &--sale:hover {
@@ -232,7 +239,25 @@
 
     &--knitting {
       display: block;
-      padding-left: 20px;
+      padding-left: 0;
     }
+
+    &--basket {
+      padding-left: 15px;
+    }
+
+    &--sale {
+      margin-left: -20px;
+    }
+
+    &--free-shipping {
+      font-weight: @base-font-weight;
+      color: @color-gray;
+      padding-left: 17px;
+    }
+  }
+
+  .site-list__icon-basket {
+    left: -40px;
   }
 }

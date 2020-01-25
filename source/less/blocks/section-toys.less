@@ -77,6 +77,16 @@
   .section-toys {
     min-width: @base-tablet-width;
     height: 677px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: url("../img/bg-zigzag-fill.svg");
+      width: @base-tablet-width;
+      top: 733px;
+      left: -18px;
+      position: absolute;
+    }
   }
 
   .section-toys__heading {
@@ -96,9 +106,6 @@
   .section-toys__item {
     width: 100%;
     height: 120px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
-    background-position: 0 103px;
 
     &--bg-lightgreen {
       background-position: -10px 103px;
@@ -115,9 +122,15 @@
   }
 }
 
+
 @media (min-width: @base-desktop-width) {
   .section-toys {
     min-width: @base-desktop-width;
+
+    &::after {
+      top: 746px;
+      left: 0;
+    }
   }
 
   .section-toys__heading {
