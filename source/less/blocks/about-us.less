@@ -11,10 +11,66 @@
 }
 
 .about-us__item {
-  margin-top: 65px;
+  margin-top: 70px;
   font-weight: @base-font-weight + 300;
   line-height: @base-line-height - 4px;
+  position: relative;
+
+  &--icon-flower::before {
+    content: url("../img/icon-flower.svg");
+    width: 32px;
+    height: 37px;
+    top: -53px;
+    left: 8px;
+    position: absolute;
+  }
+
+  &--icon-money::before {
+    content: url("../img/icon-money.svg");
+    width: 47px;
+    height: 27px;
+    top: -48px;
+    left: 0;
+    position: absolute;
+  }
+
+  &--icon-heart::before {
+    content: url("../img/icon-heart.svg");
+    width: 34px;
+    height: 27px;
+    top: -45px;
+    left: 8px;
+    position: absolute;
+  }
+
+  &--icon-ball::before {
+    content: url("../img/icon-ball.svg");
+    width: 35px;
+    height: 34px;
+    top: -47px;
+    left: 2px;
+    position: absolute;
+  }
+
+  &--icon-rocket::before {
+    content: url("../img/icon-rocket.svg");
+    width: 55px;
+    height: 23px;
+    top: -44px;
+    left: -8px;
+    position: absolute;
+  }
+
+  &--icon-gift::before {
+    content: url("../img/icon-gift.svg");
+    width: 33px;
+    height: 32px;
+    top: -48px;
+    left: 2px;
+    position: absolute;
+  }
 }
+
 
 @media (min-width: @base-tablet-width) {
   .about-us {
@@ -24,12 +80,13 @@
   }
 
   .about-us__title {
+    margin-bottom: 105px;
     font-size: @base-font-size + 26px;
     line-height: @base-line-height + 26px;
   }
 
   .about-us__list {
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -37,8 +94,14 @@
 
   .about-us__item {
     width: 334px;
+    margin-top: 107px;
     font-size: @base-font-size + 3px;
     line-height: @base-line-height - 2px;
+  }
+
+  .about-us__item:first-child,
+  .about-us__item:nth-child(4) {
+    margin-top: 0;
   }
 }
 
@@ -55,7 +118,6 @@
 
   .about-us__list {
     width: 680px;
-    height: 400px;
     margin-left: 175px;
     display: flex;
     flex-direction: column;
